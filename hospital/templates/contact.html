@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Contact
+{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<h1 class="text-center">Contact Page</h1>
+<div>
+    <img src="{% static 'images/cntct.jpg' %}" height="600px" width="100%" alt="About Image">
+</div>
+<center>
+  <div class="container">
+    <h2>Contact Details</h2>
+    <div class="contact-details">
+      <div class="contact-info">
+        <h3>Mission Hospital</h3>
+        <p><strong>Address:</strong> Mission hospital,kochi,kerala</p>
+        <p><strong>Phone:</strong> 04842198,7012967855</p>
+        <p><strong>Email:</strong> missionhsptl@hospital.com</p>
+      </div>
+      <div class="contact-info">
+        <h3>Emergency Department</h3>
+        <p><strong>Address:</strong> Mission hospital,kochi</p>
+        <p><strong>Phone:</strong> 984722424</p>
+        <p><strong>Email:</strong> emergencymission@hospital.com</p>
+      </div>
+    </div>
+  </div>
+  </center>
+{% endblock %}

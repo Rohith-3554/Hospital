@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+About
+{% endblock %}
+
+{% block content %}
+
+{% load static %}
+<h1 class="text-center"> ABOUT US</h1>
+<div>
+    <img src="{% static 'images/abt.jpg' %}" height="600px" width="100%" alt="About Image">
+</div>
+
+  <div class="container">
+    <p>Welcome to MISSION HOSPITAL, where we are dedicated to providing top-quality healthcare services to our patients. With a team of skilled medical professionals and state-of-the-art facilities, we strive to offer the best care and treatment options.</p>
+    <p>Our hospital has been serving the community for fifty years and has built a reputation for excellence in patient care and medical innovation. We are committed to putting our patients' health and well-being first, and our goal is to ensure a comfortable and supportive environment for everyone who walks through our doors.</p>
+    <p>At Mission hospital, we offer a wide range of medical services, including [list some services], and our experienced staff is here to guide you through your healthcare journey. We believe in a patient-centered approach, and our dedicated team is always ready to address your medical needs and answer any questions you may have.</p>
+    <p>Thank you for choosing Mission Hospital. We look forward to serving you and your family with the highest level of care and compassion.</p>
+  </div>
+{% endblock %}
