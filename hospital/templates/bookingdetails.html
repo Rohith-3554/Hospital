@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1 class="text-center">Booking Details</h1>
+<table class="table table-bordered bg-warning">
+    <tr>
+        <th>Name</th>
+        <th>Phonenumber</th>
+        <th>Docter name</th>
+        <th>Email</th>
+        <th>booking date</th>
+    </tr>
+    {% for i in b %}
+    <tr>
+        <td>{{i.p_name}}</td>
+        <td>{{i.p_phone}}</td>
+        <td>{{i.doc_name}}</td>
+        <td>{{i.p_email}}</td>
+        <td>{{i.booking_date}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

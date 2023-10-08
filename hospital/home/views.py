@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from .models import Departments,Doctors
+from .models import Departments,Doctors,Booking
 from .forms import BookingForm
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login,logout
@@ -27,6 +27,10 @@ def doctors(request):
         'doctors': Doctors.objects.all()
     }
     return render(request, 'doctors.html', dict_docs)
+
+def bookingdetails(request):
+    b=Booking.objects.all()
+    return render(request,"bookingdetails.html",{'b':b})
 
 def contact(request):
     return render(request,'contact.html')
